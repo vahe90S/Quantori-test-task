@@ -1,0 +1,71 @@
+@import url('./headerMedia.css');
+
+.header {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 0 20px;
+	height: 40px;
+	position: sticky;
+  top: 0;
+	width: 100%;
+	z-index: 10;
+	background: #ffffff;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.logo {
+	font-size: 28px;
+	color: #66837e;
+}
+
+.login {
+	margin-left: auto;
+	background: #66837e;
+	color: #ffffff;
+	border: none;
+	padding: 2px 24px;
+	border-radius: 8px;
+	cursor: pointer;
+	position: absolute;
+	top: 8px;
+	right: 20px;
+}
+
+.burger {
+	height: 28px;
+	width: 24px;
+	border: 2px solid #66837e;
+	border-radius: 8px;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.burger span {
+	display: flex;
+	height: 8px;
+	width: 8px;
+	border: 2px solid #66837e;
+	border-radius: 50%;
+	position: relative;
+}
+
+.burger span::before,
+.burger span::after {
+	content: '';
+	display: flex;
+	height: 8px;
+	width: 8px;
+	border: 2px solid #66837e;
+	border-radius: 50%;
+	position: absolute;
+	top: -10px;
+	left: -2px;
+}
+
+.burger span::after {
+	top: 6px;
+	left: -2px;
+}
